@@ -1,0 +1,10 @@
+{
+  "name": "http-protocol-testing-scripts",
+  "version": "1.0.0",
+  "description": "Testing and asset generation scripts",
+  "type": "module",
+  "scripts": {
+    "generate-assets": "node scripts/generate-assets.js",
+    "analyze": "node scripts/analyze-results.js"
+  }
+}

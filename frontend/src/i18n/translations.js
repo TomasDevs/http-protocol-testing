@@ -1,0 +1,281 @@
+export const translations = {
+  en: {
+    // Navigation & General
+    home: 'Home',
+    results: 'Results',
+    language: 'Language',
+
+    // Home Page
+    title: 'HTTP Protocol Performance Testing',
+    subtitle: 'Academic project for measuring and comparing HTTP/1.1, HTTP/2, and HTTP/3 performance in real-world conditions',
+
+    // Protocol Info
+    protocols: 'Protocols',
+    protocolHeader: 'Protocol',
+    featuresHeader: 'Features',
+    http1: 'HTTP/1.1',
+    http2: 'HTTP/2',
+    http3: 'HTTP/3',
+
+    // HTTP/1.1 Features
+    http1_feature1: 'Sequential requests',
+    http1_feature2: 'Head-of-line blocking',
+    http1_feature3: 'Multiple TCP connections',
+    http1_feature4: 'Plain text headers',
+
+    // HTTP/2 Features
+    http2_feature1: 'Multiplexing over single TCP',
+    http2_feature2: 'Header compression (HPACK)',
+    http2_feature3: 'Server Push',
+    http2_feature4: 'Binary protocol',
+
+    // HTTP/3 Features
+    http3_feature1: 'QUIC protocol (UDP)',
+    http3_feature2: '0-RTT connection resumption',
+    http3_feature3: 'Better loss recovery',
+    http3_feature4: 'Built-in encryption',
+
+    // Test Scenarios
+    testScenarios: 'Test Scenarios',
+    lightTest: 'Baseline Test',
+    lightTestDesc: 'Minimal resource loading - 5 images, 3 CSS, 2 JS',
+    heavyTest: 'Large Files Test',
+    heavyTestDesc: 'Large resource loading - 35 images (mixed sizes), 5 CSS, 10 JS',
+    manyTest: 'Multiplexing Test',
+    manyTestDesc: 'Many small resources - 50 images, 5 CSS, 10 JS',
+
+    // Instructions
+    howToTest: 'How to Test',
+    instruction1: 'Select a test scenario above',
+    instruction2: 'Page will load and automatically measure performance',
+    instruction3: 'Check the detected HTTP protocol',
+    instruction4: 'Review measured metrics (TTFB, DOM Load, Full Load)',
+    instruction5: 'Save result using "Save Result" button',
+    instruction6: 'Repeat test several times for accurate results',
+    instruction7: 'Test from different devices and networks if possible',
+    instruction8: 'View aggregated results in Results section',
+
+    viewResults: 'View Results',
+
+    // Footer
+    footer: 'Academic Project - HTTP Protocol Performance Testing',
+    createdBy: 'Created by',
+
+    // Performance Monitor
+    collectingMetrics: 'Collecting metrics...',
+    failedToCollect: 'Failed to collect metrics',
+    timeToFirstByte: 'Time to First Byte',
+    ttfb: 'TTFB',
+    domContentLoaded: 'DOM Content Loaded',
+    domLoadTime: 'DOM Load Time',
+    fullPageLoad: 'Full Page Load',
+    totalLoadTime: 'Total Load Time',
+    resourcesLoaded: 'Resources Loaded',
+    totalResources: 'Total Resources',
+    totalDataTransfer: 'Total Data Transfer',
+    transferredSize: 'Transferred Size',
+    protocolVersion: 'Protocol Version',
+    httpProtocol: 'HTTP Protocol',
+    saveResult: 'Save Result',
+    saved: 'Saved!',
+    resourceDetails: 'Resource Details',
+    items: 'items',
+    type: 'Type',
+    name: 'Name',
+    duration: 'Duration',
+    size: 'Size',
+    protocol: 'Protocol',
+
+    // Protocol Detector
+    protocolDescHttp1: 'Traditional protocol with sequential requests. Slower for multiple resources.',
+    protocolDescHttp2: 'Modern protocol with multiplexing and header compression over TCP.',
+    protocolDescHttp3: 'Latest protocol using QUIC over UDP. Fastest with multiplexing and 0-RTT.',
+    protocolDescUnknown: 'Protocol could not be detected.',
+
+    // Test Scenario
+    testConfiguration: 'Test Configuration',
+    images: 'Images',
+    small: 'small',
+    medium: 'medium',
+    large: 'large',
+    cssFiles: 'CSS Files',
+    jsFiles: 'JS Files',
+    loadedImages: 'Loaded Images',
+
+    // Results Page
+    backToHome: 'Back to Home',
+    testResults: 'Test Results',
+    totalResults: 'Total Results',
+    noResults: 'No results yet!',
+    noResultsDesc: 'Run some tests to see results here.',
+    goToTests: 'Go to tests',
+    scenario: 'Scenario',
+    allScenarios: 'All Scenarios',
+    allProtocols: 'All Protocols',
+    exportJSON: 'Export JSON',
+    exportCSV: 'Export CSV',
+    clearAll: 'Clear All',
+    clearConfirm: 'Are you sure you want to clear all results?',
+    barChart: 'Bar Chart',
+    timeSeries: 'Time Series',
+    avgPerformanceByProtocol: 'Average Performance Metrics by Protocol',
+    fullLoadTimeOverTests: 'Full Load Time Over Tests',
+    statisticalSummary: 'Statistical Summary',
+    tests: 'Tests',
+    avgTTFB: 'Avg TTFB',
+    avgDOMLoad: 'Avg DOM Load',
+    avgFullLoad: 'Avg Full Load',
+    detailedResults: 'Detailed Results',
+    timestamp: 'Timestamp',
+    resources: 'Resources',
+    unknown: 'Unknown',
+
+    // 404 Page
+    pageNotFound: 'Page Not Found',
+    pageNotFoundDesc: 'The page you are looking for does not exist or has been moved.',
+
+    // Table Headers
+    domLoad: 'DOM Load',
+    fullLoad: 'Full Load',
+  },
+
+  cz: {
+    // Navigation & General
+    home: 'Domů',
+    results: 'Výsledky',
+    language: 'Jazyk',
+
+    // Home Page
+    title: 'Testování Výkonu HTTP Protokolů',
+    subtitle: 'Akademický projekt pro měření a porovnání výkonu HTTP/1.1, HTTP/2 a HTTP/3 v reálných podmínkách',
+
+    // Protocol Info
+    protocols: 'Protokoly',
+    protocolHeader: 'Protokol',
+    featuresHeader: 'Vlastnosti',
+    http1: 'HTTP/1.1',
+    http2: 'HTTP/2',
+    http3: 'HTTP/3',
+
+    // HTTP/1.1 Features
+    http1_feature1: 'Sekvenční požadavky',
+    http1_feature2: 'Head-of-line blocking',
+    http1_feature3: 'Více TCP spojení',
+    http1_feature4: 'Textové hlavičky',
+
+    // HTTP/2 Features
+    http2_feature1: 'Multiplexing přes jedno TCP',
+    http2_feature2: 'Komprese hlaviček (HPACK)',
+    http2_feature3: 'Server Push',
+    http2_feature4: 'Binární protokol',
+
+    // HTTP/3 Features
+    http3_feature1: 'QUIC protokol (UDP)',
+    http3_feature2: '0-RTT obnovení spojení',
+    http3_feature3: 'Lepší loss recovery',
+    http3_feature4: 'Vestavěné šifrování',
+
+    // Test Scenarios
+    testScenarios: 'Testovací Scénáře',
+    lightTest: 'Základní Test',
+    lightTestDesc: 'Minimální načítání zdrojů - 5 obrázků, 3 CSS, 2 JS',
+    heavyTest: 'Test Velkých Souborů',
+    heavyTestDesc: 'Načítání velkých zdrojů - 35 obrázků (mix velikostí), 5 CSS, 10 JS',
+    manyTest: 'Test Multiplexingu',
+    manyTestDesc: 'Mnoho malých zdrojů - 50 obrázků, 5 CSS, 10 JS',
+
+    // Instructions
+    howToTest: 'Jak Testovat',
+    instruction1: 'Vyberte testovací scénář výše',
+    instruction2: 'Stránka se načte a automaticky změří výkon',
+    instruction3: 'Zkontrolujte detekovaný HTTP protokol',
+    instruction4: 'Prohlédněte si naměřené metriky (TTFB, DOM Load, Full Load)',
+    instruction5: 'Uložte výsledek pomocí tlačítka "Uložit Výsledek"',
+    instruction6: 'Opakujte test několikrát pro přesnější výsledky',
+    instruction7: 'Pokud možno testujte z různých zařízení a sítí',
+    instruction8: 'Prohlédněte si agregované výsledky v sekci Výsledky',
+
+    viewResults: 'Zobrazit Výsledky',
+
+    // Footer
+    footer: 'Akademický Projekt - Testování Výkonu HTTP Protokolů',
+    createdBy: 'Vytvořil',
+
+    // Performance Monitor
+    collectingMetrics: 'Sbírám metriky...',
+    failedToCollect: 'Nepodařilo se sesbírat metriky',
+    timeToFirstByte: 'Čas do Prvního Bytu',
+    ttfb: 'TTFB',
+    domContentLoaded: 'Načtení DOM',
+    domLoadTime: 'Čas Načtení DOM',
+    fullPageLoad: 'Úplné Načtení Stránky',
+    totalLoadTime: 'Celkový Čas Načtení',
+    resourcesLoaded: 'Načtené Zdroje',
+    totalResources: 'Celkem Zdrojů',
+    totalDataTransfer: 'Celkový Přenos Dat',
+    transferredSize: 'Přenesená Velikost',
+    protocolVersion: 'Verze Protokolu',
+    httpProtocol: 'HTTP Protokol',
+    saveResult: 'Uložit Výsledek',
+    saved: 'Uloženo!',
+    resourceDetails: 'Detaily Zdrojů',
+    items: 'položek',
+    type: 'Typ',
+    name: 'Název',
+    duration: 'Trvání',
+    size: 'Velikost',
+    protocol: 'Protokol',
+
+    // Protocol Detector
+    protocolDescHttp1: 'Tradiční protokol se sekvenčními požadavky. Pomalejší pro více zdrojů.',
+    protocolDescHttp2: 'Moderní protokol s multiplexingem a kompresí hlaviček přes TCP.',
+    protocolDescHttp3: 'Nejnovější protokol používající QUIC přes UDP. Nejrychlejší s multiplexingem a 0-RTT.',
+    protocolDescUnknown: 'Protokol nelze detekovat.',
+
+    // Test Scenario
+    testConfiguration: 'Konfigurace Testu',
+    images: 'Obrázky',
+    small: 'malých',
+    medium: 'středních',
+    large: 'velkých',
+    cssFiles: 'CSS Soubory',
+    jsFiles: 'JS Soubory',
+    loadedImages: 'Načtené Obrázky',
+
+    // Results Page
+    backToHome: 'Zpět Domů',
+    testResults: 'Výsledky Testů',
+    totalResults: 'Celkem Výsledků',
+    noResults: 'Zatím žádné výsledky!',
+    noResultsDesc: 'Spusťte nějaké testy, abyste viděli výsledky.',
+    goToTests: 'Přejít na testy',
+    scenario: 'Scénář',
+    allScenarios: 'Všechny Scénáře',
+    allProtocols: 'Všechny Protokoly',
+    exportJSON: 'Exportovat JSON',
+    exportCSV: 'Exportovat CSV',
+    clearAll: 'Vymazat Vše',
+    clearConfirm: 'Opravdu chcete vymazat všechny výsledky?',
+    barChart: 'Sloupcový Graf',
+    timeSeries: 'Časová Řada',
+    avgPerformanceByProtocol: 'Průměrné Metriky Výkonu dle Protokolu',
+    fullLoadTimeOverTests: 'Celkový Čas Načtení v Testech',
+    statisticalSummary: 'Statistický Souhrn',
+    tests: 'Testy',
+    avgTTFB: 'Průměr TTFB',
+    avgDOMLoad: 'Průměr DOM Load',
+    avgFullLoad: 'Průměr Full Load',
+    detailedResults: 'Detailní Výsledky',
+    timestamp: 'Datum a čas',
+    resources: 'Zdroje',
+    unknown: 'Neznámý',
+
+    // 404 Page
+    pageNotFound: 'Stránka Nenalezena',
+    pageNotFoundDesc: 'Stránka, kterou hledáte, neexistuje nebo byla přesunuta.',
+
+    // Table Headers
+    domLoad: 'Načtení DOM',
+    fullLoad: 'Celkové načtení',
+  }
+};
