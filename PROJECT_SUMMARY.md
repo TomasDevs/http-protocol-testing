@@ -99,7 +99,7 @@ Kompletní aplikace pro testování výkonu HTTP protokolů pro porovnání HTTP
 
 **Testovací Skripty:**
 - Automatické generování assetů (~5.5MB testovacích dat)
-- Curl testovací skripty pro všechny protokoly
+- Curl testovací skripty pro Všechny protokoly
 - Analýza výsledků se statistikami
 
 ### Měřené Metriky
@@ -120,14 +120,14 @@ Kompletní aplikace pro testování výkonu HTTP protokolů pro porovnání HTTP
 
 ### Očekávané Výsledky
 
-**Základní Test:**
+**Základní test:**
 - Minimální rozdíly mezi protokoly
 
-**Test Velkých Souborů:**
+**Test velkých souborů:**
 - HTTP/2 rychlejší než HTTP/1.1 (1.5-2x)
 - HTTP/3 mírně rychlejší než HTTP/2
 
-**Test Multiplexingu:**
+**Test multiplexingu:**
 - HTTP/2 výrazně rychlejší než HTTP/1.1 (2-3x)
 - HTTP/3 celkově nejrychlejší
 
@@ -154,4 +154,4 @@ Nastavení buildu:
 **HTTP/3:**
 - QUIC protokol (UDP místo TCP)
 - 0-RTT connection resumption
-- Lepší loss recovery, built-in šifrování
+- Lepší zotavení ze ztrát, built-in šifrování

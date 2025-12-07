@@ -2,7 +2,7 @@
 
 Příklady curl commandů pro testování HTTP protokolů.
 
-## Základní Testy
+## Základní testy
 
 ### Test HTTP/1.1
 ```bash

@@ -208,7 +208,7 @@ Cloudflare automaticky komprimuje obsah pomocí Brotli a GZIP.
 1. **Testování**: Spusťte curl testy z různých lokací
 2. **Monitoring**: Sledujte performance v Cloudflare Analytics
 3. **Optimalizace**: Analyzujte výsledky a optimalizujte assety
-4. **Dokumentace**: Dokumentujte vaše findings pro akademický projekt
+4. **Dokumentace**: Dokumentujte vaše findings pro Akademický projekt
 
 ## Užitečné Odkazy
 

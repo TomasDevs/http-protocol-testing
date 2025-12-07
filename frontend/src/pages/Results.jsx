@@ -52,7 +52,7 @@ function Results() {
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 border-b border-neutral-200 pb-6 gap-4">
+        <div className="flex flex-col sm:flex-row justify-between items-start mb-8 border-b border-neutral-200 pb-6 gap-4">
           <div>
             <Link to="/" className="font-mono text-sm text-black hover:underline mb-4 inline-block cursor-pointer">
               ← {t('backToHome')}

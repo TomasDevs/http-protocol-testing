@@ -9,9 +9,9 @@ function Home() {
     <div className="min-h-screen bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 sm:mb-12 border-b border-neutral-200 pb-6 gap-4">
+        <div className="flex flex-col sm:flex-row justify-between items-start mb-8 sm:mb-12 border-b border-neutral-200 pb-6 gap-4">
           <div>
-            <h1 className="text-xl sm:text-2xl font-mono font-bold text-black mb-2 mb-2">
+            <h1 className="text-xl sm:text-2xl font-mono font-bold text-black mb-2">
               {t('title')}
             </h1>
             <p className="text-sm text-neutral-600 max-w-2xl font-mono">
