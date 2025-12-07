@@ -54,7 +54,7 @@ export const translations = {
     http2Step1: 'Chrome: chrome://flags → search "QUIC" → Disabled | Firefox: about:config → network.http.http3.enable → false',
     http2Step2: 'Restart browser',
     http2Step3: 'Refresh this page (F5)',
-    http1Instructions: 'Run: npm run dev → http://localhost:5174',
+    http1Instructions: 'Run: npm run dev → http://localhost:5173',
     http1Warning: 'Localhost results are NOT comparable to production (no network latency)',
     warning: 'Warning',
 
@@ -211,7 +211,7 @@ export const translations = {
     http2Step1: 'Chrome: chrome://flags → hledat "QUIC" → Disabled | Firefox: about:config → network.http.http3.enable → false',
     http2Step2: 'Restartovat prohlížeč',
     http2Step3: 'Obnovit stránku (F5)',
-    http1Instructions: 'Spusťte: npm run dev → http://localhost:5174',
+    http1Instructions: 'Spusťte: npm run dev → http://localhost:5173',
     http1Warning: 'Výsledky z localhostu NEJSOU srovnatelné s produkcí (žádná síťová latence)',
     warning: 'Varování',
 

@@ -55,7 +55,7 @@ node testing/scripts/analyze-results.js   # Analyze results
 2. **HTTP/2** - Same URL, disable QUIC:
    - Chrome: `chrome://flags` → search "QUIC" → Disable → Restart
 
-3. **HTTP/1.1** - Run locally: `npm run dev` → http://localhost:5174
+3. **HTTP/1.1** - Run locally: `npm run dev` → http://localhost:5173
    - ⚠️ **Warning**: Not comparable to production (no latency)
 
 **Browsers:**
@@ -115,7 +115,7 @@ node testing/scripts/analyze-results.js   # Analýza výsledků
 2. **HTTP/2** - Stejná URL, vypněte QUIC:
    - Chrome: `chrome://flags` → hledejte "QUIC" → Zakázat → Restartovat
 
-3. **HTTP/1.1** - Spusťte lokálně: `npm run dev` → http://localhost:5174
+3. **HTTP/1.1** - Spusťte lokálně: `npm run dev` → http://localhost:5173
    - ⚠️ **Varování**: Není srovnatelné s produkcí (žádná latence)
 
 **Prohlížeče:**
