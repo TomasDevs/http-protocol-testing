@@ -102,7 +102,6 @@ function Home() {
                 <li>1. {t('http2Step1')}</li>
                 <li>2. {t('http2Step2')}</li>
                 <li>3. {t('http2Step3')}</li>
-                <li>4. {t('http2Step4')}</li>
               </ol>
             </div>
             <div className="p-4 sm:p-5">
