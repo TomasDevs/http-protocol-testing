@@ -45,12 +45,18 @@ node testing/scripts/analyze-results.js   # Analyze results
 - **Large Files** (`/test/heavy`) - 35 images (various sizes) + 5 CSS + 10 JS
 - **Multiplexing** (`/test/many`) - 50 small images + 5 CSS + 10 JS
 
-### Important Notes
+### Protocol Testing Strategy
 
-**HTTP/3 on Localhost:**
-- HTTP/3 will NOT work on localhost
-- Requires HTTPS deployment (Cloudflare Pages)
-- Only HTTP/1.1 or HTTP/2 available locally
+**Recommended approach:**
+
+1. **HTTP/3** - Visit production: https://http-protocol-testing.tomas-stveracek.workers.dev/
+   - Chrome with QUIC enabled (default)
+
+2. **HTTP/2** - Same URL, disable QUIC:
+   - Chrome: `chrome://flags` → search "QUIC" → Disable → Restart
+
+3. **HTTP/1.1** - Run locally: `npm run dev` → http://localhost:5174
+   - ⚠️ **Warning**: Not comparable to production (no latency)
 
 **Browsers:**
 - Recommended: Chrome or Firefox (latest)
@@ -99,12 +105,18 @@ node testing/scripts/analyze-results.js   # Analýza výsledků
 - **Velké soubory** (`/test/heavy`) - 35 obrázků (různé velikosti) + 5 CSS + 10 JS
 - **Multiplexing** (`/test/many`) - 50 malých obrázků + 5 CSS + 10 JS
 
-### Důležité Poznámky
+### Strategie Testování Protokolů
 
-**HTTP/3 na Localhost:**
-- HTTP/3 NEBUDE fungovat na localhost
-- Vyžaduje HTTPS deployment (Cloudflare Pages)
-- Lokálně dostupné pouze HTTP/1.1 nebo HTTP/2
+**Doporučený přístup:**
+
+1. **HTTP/3** - Navštivte produkci: https://http-protocol-testing.tomas-stveracek.workers.dev/
+   - Chrome s povoleným QUIC (výchozí)
+
+2. **HTTP/2** - Stejná URL, vypněte QUIC:
+   - Chrome: `chrome://flags` → hledejte "QUIC" → Zakázat → Restartovat
+
+3. **HTTP/1.1** - Spusťte lokálně: `npm run dev` → http://localhost:5174
+   - ⚠️ **Varování**: Není srovnatelné s produkcí (žádná latence)
 
 **Prohlížeče:**
 - Doporučeno: Chrome nebo Firefox (nejnovější)

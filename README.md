@@ -73,25 +73,46 @@ npm run build
 
 Build output: `frontend/dist`
 
-### Deployment (Cloudflare Pages)
+### Deployment (Cloudflare Workers)
+
+**Live Demo**: [https://http-protocol-testing.tomas-stveracek.workers.dev/](https://http-protocol-testing.tomas-stveracek.workers.dev/)
 
 1. Push to GitHub
-2. Connect Cloudflare Pages to your repository
+2. Connect Cloudflare Workers & Pages to your repository
 3. Build settings:
-   - **Build command**: `npm run build`
-   - **Build output directory**: `dist`
-   - **Root directory**: `frontend`
+   - **Build command**: `cd frontend && npm install && npm run build`
+   - **Deploy command**: `cd frontend && npx wrangler deploy`
+   - **Root directory**: `/`
 
-Cloudflare Pages automatically supports HTTP/3.
+Cloudflare Workers automatically supports HTTP/2 and HTTP/3.
 
-### Testing
+### Testing Protocol Versions
 
-1. Open the application in your browser
-2. Select a test scenario (Baseline / Large Files / Multiplexing)
-3. Check the detected HTTP protocol
-4. Review measured metrics
-5. Save results for comparison
-6. View aggregated results on the Results page
+**Recommended Testing Strategy:**
+
+1. **HTTP/3 (Cloudflare - Default)**
+   - Visit: https://http-protocol-testing.tomas-stveracek.workers.dev/
+   - Chrome with QUIC enabled (default)
+   - Most modern, fastest protocol
+
+2. **HTTP/2 (Cloudflare - Fallback)**
+   - Visit same URL
+   - Disable QUIC in Chrome: `chrome://flags` → search "QUIC" → Disable
+   - Restart Chrome
+   - Clear browser cache for accurate results
+
+3. **HTTP/1.1 (Localhost - Development Only)**
+   - Run: `npm run dev` → `http://localhost:5174`
+   - ⚠️ **Warning**: Results are NOT comparable to production (no network latency)
+   - Use only for feature testing, not performance comparison
+
+### Using the Application
+
+1. Select a test scenario (Light / Heavy / Many resources)
+2. Check the detected HTTP protocol in the black badge
+3. Review measured metrics (TTFB, DOM Load, Full Load)
+4. Click "Save Result" to store for comparison
+5. Visit Results page to view charts and statistics
 
 ### License
 
@@ -172,25 +193,46 @@ npm run build
 
 Výstup buildu: `frontend/dist`
 
-### Deployment (Cloudflare Pages)
+### Deployment (Cloudflare Workers)
+
+**Live Demo**: [https://http-protocol-testing.tomas-stveracek.workers.dev/](https://http-protocol-testing.tomas-stveracek.workers.dev/)
 
 1. Push do GitHub
-2. Připojení Cloudflare Pages k repozitáři
+2. Připojení Cloudflare Workers & Pages k repozitáři
 3. Nastavení buildu:
-   - **Build command**: `npm run build`
-   - **Build output directory**: `dist`
-   - **Root directory**: `frontend`
+   - **Build command**: `cd frontend && npm install && npm run build`
+   - **Deploy command**: `cd frontend && npx wrangler deploy`
+   - **Root directory**: `/`
 
-Cloudflare Pages automaticky podporuje HTTP/3.
+Cloudflare Workers automaticky podporuje HTTP/2 a HTTP/3.
 
-### Testování
+### Testování Verzí Protokolu
 
-1. Otevřete aplikaci v prohlížeči
-2. Vyberte testovací scénář (Základní / Velké soubory / Multiplexing)
-3. Zkontrolujte detekovaný HTTP protokol
-4. Prohlédněte si naměřené metriky
-5. Uložte výsledky pro porovnání
-6. Zobrazit agregované výsledky na stránce Výsledky
+**Doporučená Testovací Strategie:**
+
+1. **HTTP/3 (Cloudflare - Výchozí)**
+   - Navštivte: https://http-protocol-testing.tomas-stveracek.workers.dev/
+   - Chrome s povoleným QUIC (výchozí)
+   - Nejmodernější, nejrychlejší protokol
+
+2. **HTTP/2 (Cloudflare - Fallback)**
+   - Navštivte stejnou URL
+   - Vypněte QUIC v Chrome: `chrome://flags` → hledejte "QUIC" → Zakázat
+   - Restartujte Chrome
+   - Vymažte cache prohlížeče pro přesné výsledky
+
+3. **HTTP/1.1 (Localhost - Pouze Pro Vývoj)**
+   - Spusťte: `npm run dev` → `http://localhost:5174`
+   - ⚠️ **Varování**: Výsledky NEJSOU srovnatelné s produkcí (žádná síťová latence)
+   - Používejte pouze pro testování funkcí, ne pro porovnání výkonu
+
+### Použití Aplikace
+
+1. Vyberte testovací scénář (Lehký / Těžký / Mnoho zdrojů)
+2. Zkontrolujte detekovaný HTTP protokol v černém poli
+3. Prohlédněte si naměřené metriky (TTFB, DOM Load, Full Load)
+4. Klikněte na "Uložit výsledek" pro uložení k porovnání
+5. Navštivte stránku Výsledky pro zobrazení grafů a statistik
 
 ### Licence
 

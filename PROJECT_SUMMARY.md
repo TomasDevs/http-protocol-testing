@@ -56,12 +56,14 @@ Complete HTTP protocol performance testing application for comparing HTTP/1.1, H
 
 ### Deployment
 
-Recommended: Cloudflare Pages (automatic HTTP/3 support)
+**Live Demo**: https://http-protocol-testing.tomas-stveracek.workers.dev/
+
+Recommended: Cloudflare Workers (automatic HTTP/2 & HTTP/3 support)
 
 Build settings:
-- Build command: `npm run build`
-- Output directory: `dist`
-- Root directory: `frontend`
+- Build command: `cd frontend && npm install && npm run build`
+- Deploy command: `cd frontend && npx wrangler deploy`
+- Root directory: `/`
 
 ### Protocol Comparison
 
@@ -133,12 +135,14 @@ Kompletní aplikace pro testování výkonu HTTP protokolů pro porovnání HTTP
 
 ### Deployment
 
-Doporučeno: Cloudflare Pages (automatická podpora HTTP/3)
+**Live Demo**: https://http-protocol-testing.tomas-stveracek.workers.dev/
+
+Doporučeno: Cloudflare Workers (automatická podpora HTTP/2 & HTTP/3)
 
 Nastavení buildu:
-- Build command: `npm run build`
-- Output directory: `dist`
-- Root directory: `frontend`
+- Build command: `cd frontend && npm install && npm run build`
+- Deploy command: `cd frontend && npx wrangler deploy`
+- Root directory: `/`
 
 ### Porovnání Protokolů
 

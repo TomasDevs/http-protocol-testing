@@ -92,6 +92,8 @@ export const translations = {
     protocolDescHttp2: 'Modern protocol with multiplexing and header compression over TCP.',
     protocolDescHttp3: 'Latest protocol using QUIC over UDP. Fastest with multiplexing and 0-RTT.',
     protocolDescUnknown: 'Protocol could not be detected.',
+    localhostWarning: 'Localhost Warning',
+    localhostWarningText: 'Results are not comparable to production (no network latency). Use only for feature testing.',
 
     // Test Scenario
     testConfiguration: 'Test Configuration',
@@ -233,6 +235,8 @@ export const translations = {
     protocolDescHttp2: 'Moderní protokol s multiplexingem a kompresí hlaviček přes TCP.',
     protocolDescHttp3: 'Nejnovější protokol používající QUIC přes UDP. Nejrychlejší s multiplexingem a 0-RTT.',
     protocolDescUnknown: 'Protokol nelze detekovat.',
+    localhostWarning: 'Varování Localhost',
+    localhostWarningText: 'Výsledky nejsou srovnatelné s produkcí (žádná síťová latence). Používejte pouze pro testování funkcí.',
 
     // Test Scenario
     testConfiguration: 'Konfigurace testu',
