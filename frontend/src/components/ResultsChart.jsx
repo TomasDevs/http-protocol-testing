@@ -131,7 +131,7 @@ function ResultsChart({ data, scenarioFilter = 'all' }) {
         beginAtZero: true,
         title: {
           display: true,
-          text: 'Time (ms)',
+          text: t('timeMs'),
           font: { family: 'monospace', size: 11 },
           color: '#000'
         },
@@ -179,7 +179,7 @@ function ResultsChart({ data, scenarioFilter = 'all' }) {
         beginAtZero: true,
         title: {
           display: true,
-          text: 'Time (ms)',
+          text: t('timeMs'),
           font: { family: 'monospace', size: 11 },
           color: '#000'
         },

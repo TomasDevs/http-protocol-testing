@@ -85,6 +85,7 @@ export const translations = {
     duration: 'Duration',
     size: 'Size',
     protocol: 'Protocol',
+    timeMs: 'Time (ms)',
 
     // Protocol Detector
     protocolDescHttp1: 'Traditional protocol with sequential requests. Slower for multiple resources.',
@@ -159,14 +160,14 @@ export const translations = {
 
     // HTTP/1.1 Features
     http1_feature1: 'Sekvenční požadavky',
-    http1_feature2: 'Head-of-line blocking',
+    http1_feature2: 'Blokování ve frontě',
     http1_feature3: 'Více TCP spojení',
     http1_feature4: 'Textové hlavičky',
 
     // HTTP/2 Features
     http2_feature1: 'Multiplexing přes jedno TCP',
     http2_feature2: 'Komprese hlaviček (HPACK)',
-    http2_feature3: 'Server Push',
+    http2_feature3: 'Server push',
     http2_feature4: 'Binární protokol',
 
     // HTTP/3 Features
@@ -225,6 +226,7 @@ export const translations = {
     duration: 'Trvání',
     size: 'Velikost',
     protocol: 'Protokol',
+    timeMs: 'Čas (ms)',
 
     // Protocol Detector
     protocolDescHttp1: 'Tradiční protokol se sekvenčními požadavky. Pomalejší pro více zdrojů.',
