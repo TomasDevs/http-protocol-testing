@@ -15,7 +15,7 @@ function Home() {
               {t('title')}
             </h1>
             <p className="text-sm text-neutral-600 max-w-2xl font-mono">
-              {t('subtitle')}
+              {t('subtitle')} <a href="#protocol-switching" className="text-black hover:underline font-bold">→ {t('howToSwitch')}</a>
             </p>
           </div>
           <LanguageSwitcher />
@@ -85,6 +85,34 @@ function Home() {
                 <span className="font-mono text-xl sm:text-2xl">→</span>
               </div>
             </Link>
+          </div>
+        </section>
+
+        {/* Protocol Switching Instructions */}
+        <section id="protocol-switching" className="mb-8 sm:mb-12">
+          <h2 className="text-base sm:text-lg font-mono font-bold text-black mb-4 uppercase tracking-wide">{t('protocolSwitching')}</h2>
+          <div className="border-2 border-black bg-white">
+            <div className="p-4 sm:p-5 border-b-2 border-black bg-neutral-50">
+              <h3 className="font-mono font-bold text-sm mb-2">HTTP/3 - {t('defaultVersion')}</h3>
+              <p className="font-mono text-xs text-neutral-700">{t('http3Instructions')}</p>
+            </div>
+            <div className="p-4 sm:p-5 border-b-2 border-black">
+              <h3 className="font-mono font-bold text-sm mb-2">HTTP/2 - {t('fallbackVersion')}</h3>
+              <ol className="font-mono text-xs text-neutral-700 space-y-1">
+                <li>1. {t('http2Step1')}</li>
+                <li>2. {t('http2Step2')}</li>
+                <li>3. {t('http2Step3')}</li>
+                <li>4. {t('http2Step4')}</li>
+              </ol>
+            </div>
+            <div className="p-4 sm:p-5">
+              <h3 className="font-mono font-bold text-sm mb-2">HTTP/1.1 - {t('localhostOnly')}</h3>
+              <p className="font-mono text-xs text-neutral-700 mb-2">{t('http1Instructions')}</p>
+              <div className="bg-yellow-50 border border-yellow-600 px-3 py-2 mt-2">
+                <span className="font-mono text-xs font-bold text-yellow-800">⚠️ {t('warning')}:</span>
+                <span className="font-mono text-xs text-yellow-700 ml-1">{t('http1Warning')}</span>
+              </div>
+            </div>
           </div>
         </section>
 

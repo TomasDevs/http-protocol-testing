@@ -7,7 +7,8 @@ export const translations = {
 
     // Home Page
     title: 'HTTP Protocol Performance Testing',
-    subtitle: 'Academic project for measuring and comparing HTTP/1.1, HTTP/2, and HTTP/3 performance in real-world conditions',
+    subtitle: 'Measure and compare HTTP/1.1, HTTP/2, and HTTP/3 performance. Test on Cloudflare (HTTP/2 & HTTP/3) or localhost (HTTP/1.1).',
+    howToSwitch: 'How to switch protocols',
 
     // Protocol Info
     protocols: 'Protocols',
@@ -43,6 +44,20 @@ export const translations = {
     heavyTestDesc: 'Large resource loading - 35 images (mixed sizes), 5 CSS, 10 JS',
     manyTest: 'Multiplexing Test',
     manyTestDesc: 'Many small resources - 50 images, 5 CSS, 10 JS',
+
+    // Protocol Switching
+    protocolSwitching: 'How to Switch HTTP Protocols',
+    defaultVersion: 'Default',
+    fallbackVersion: 'Fallback',
+    localhostOnly: 'Localhost Only',
+    http3Instructions: 'This application runs on Cloudflare Workers with HTTP/3 enabled by default. Just visit the site normally in Chrome.',
+    http2Step1: 'Open Chrome and go to chrome://flags',
+    http2Step2: 'Search for "QUIC" and set to "Disabled"',
+    http2Step3: 'Restart Chrome',
+    http2Step4: 'Clear browser cache and session storage, then revisit this site',
+    http1Instructions: 'Run: npm run dev → http://localhost:5174',
+    http1Warning: 'Localhost results are NOT comparable to production (no network latency)',
+    warning: 'Warning',
 
     // Instructions
     howToTest: 'How to Test',
@@ -150,7 +165,8 @@ export const translations = {
 
     // Home Page
     title: 'Testování Výkonu HTTP Protokolů',
-    subtitle: 'Akademický projekt pro měření a porovnání výkonu HTTP/1.1, HTTP/2 a HTTP/3 v reálných podmínkách',
+    subtitle: 'Měření a porovnání výkonu HTTP/1.1, HTTP/2 a HTTP/3. Testujte na Cloudflare (HTTP/2 & HTTP/3) nebo na localhostu (HTTP/1.1).',
+    howToSwitch: 'Jak přepínat protokoly',
 
     // Protocol Info
     protocols: 'Protokoly',
@@ -186,6 +202,20 @@ export const translations = {
     heavyTestDesc: 'Načítání velkých zdrojů - 35 obrázků (mix velikostí), 5 CSS, 10 JS',
     manyTest: 'Test multiplexingu',
     manyTestDesc: 'Mnoho malých zdrojů - 50 obrázků, 5 CSS, 10 JS',
+
+    // Protocol Switching
+    protocolSwitching: 'Jak Přepínat HTTP Protokoly',
+    defaultVersion: 'Výchozí',
+    fallbackVersion: 'Záložní',
+    localhostOnly: 'Pouze Localhost',
+    http3Instructions: 'Tato aplikace běží na Cloudflare Workers s HTTP/3 jako výchozí. Stačí navštívit web normálně v Chrome.',
+    http2Step1: 'Otevřete Chrome a jděte na chrome://flags',
+    http2Step2: 'Vyhledejte "QUIC" a nastavte na "Disabled"',
+    http2Step3: 'Restartujte Chrome',
+    http2Step4: 'Vymažte cache a session storage prohlížeče, pak znovu navštivte tuto stránku',
+    http1Instructions: 'Spusťte: npm run dev → http://localhost:5174',
+    http1Warning: 'Výsledky z localhostu NEJSOU srovnatelné s produkcí (žádná síťová latence)',
+    warning: 'Varování',
 
     // Instructions
     howToTest: 'Jak testovat',
