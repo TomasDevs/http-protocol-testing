@@ -133,7 +133,7 @@ Webová aplikace pro měření a porovnání výkonu HTTP/1.1, HTTP/2 a HTTP/3 v
 
 - Automatická detekce HTTP protokolu (HTTP/1.1, HTTP/2, HTTP/3)
 - Metriky výkonu: TTFB, DOM Load Time, Full Load Time, počet zdrojů, celková velikost
-- Tři testovací scénáře: Základní (malé assety), Velké soubory (těžké assety), Multiplexing (mnoho malých assetů)
+- Tři testovací scénáře: Základní (malé assety), Velké soubory (velké assety), Multiplexing (mnoho malých assetů)
 - Vizualizace výsledků pomocí grafů
 - Export dat (JSON, CSV)
 - Dvojjazyčné rozhraní (EN/CZ)
