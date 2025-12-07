@@ -61,7 +61,7 @@ function PerformanceMonitor({ scenarioType }) {
         <MetricCard title={t('totalLoadTime')} value={formatTime(metrics.fullLoad)} />
         <MetricCard title={t('totalResources')} value={metrics.resourceCount} />
         <MetricCard title={t('transferredSize')} value={formatBytes(metrics.totalSize)} />
-        <MetricCard title={t('httpProtocol')} value={metrics.protocol.toUpperCase()} />
+        <MetricCard title={t('httpProtocol')} value={metrics.protocol} />
       </div>
 
       <div>

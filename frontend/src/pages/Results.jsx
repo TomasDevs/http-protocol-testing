@@ -93,7 +93,7 @@ function Results() {
                     <label className="block text-xs font-mono font-bold mb-2 uppercase">{t('protocol')}</label>
                     <select value={protocolFilter} onChange={(e) => setProtocolFilter(e.target.value)} className="border-2 border-black px-3 py-2 font-mono text-sm bg-white cursor-pointer">
                       {protocols.map(protocol => (
-                        <option key={protocol} value={protocol}>{protocol === 'all' ? t('allProtocols') : protocol.toUpperCase()}</option>
+                        <option key={protocol} value={protocol}>{protocol === 'all' ? t('allProtocols') : protocol}</option>
                       ))}
                     </select>
                   </div>
@@ -135,7 +135,7 @@ function Results() {
                            result.scenarioType === 'heavy' ? t('heavyTest') :
                            result.scenarioType === 'many' ? t('manyTest') : result.scenarioType}
                         </td>
-                        <td className="px-4 py-3 font-bold">{result.protocol.toUpperCase()}</td>
+                        <td className="px-4 py-3 font-bold">{result.protocol}</td>
                         <td className="px-4 py-3">{formatTime(result.ttfb)}</td>
                         <td className="px-4 py-3">{formatTime(result.domLoad)}</td>
                         <td className="px-4 py-3">{formatTime(result.fullLoad)}</td>

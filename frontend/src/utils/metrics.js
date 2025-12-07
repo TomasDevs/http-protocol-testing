@@ -4,7 +4,7 @@
 
 /**
  * Detect HTTP protocol version used for the main document
- * @returns {string} Protocol version (h3, h2, http/1.1, or unknown)
+ * @returns {string} Protocol version (HTTP/3, HTTP/2, HTTP/1.1, or unknown)
  */
 export function detectProtocol() {
   try {
@@ -16,11 +16,11 @@ export function detectProtocol() {
 
       // Map protocol strings to readable format
       if (protocol.includes('h3') || protocol.includes('quic')) {
-        return 'h3';
+        return 'HTTP/3';
       } else if (protocol.includes('h2')) {
-        return 'h2';
+        return 'HTTP/2';
       } else if (protocol.includes('http/1')) {
-        return 'http/1.1';
+        return 'HTTP/1.1';
       }
 
       return protocol;
@@ -30,9 +30,9 @@ export function detectProtocol() {
     const entries = performance.getEntriesByType('resource');
     if (entries.length > 0 && entries[0].nextHopProtocol) {
       const protocol = entries[0].nextHopProtocol.toLowerCase();
-      if (protocol.includes('h3') || protocol.includes('quic')) return 'h3';
-      if (protocol.includes('h2')) return 'h2';
-      if (protocol.includes('http/1')) return 'http/1.1';
+      if (protocol.includes('h3') || protocol.includes('quic')) return 'HTTP/3';
+      if (protocol.includes('h2')) return 'HTTP/2';
+      if (protocol.includes('http/1')) return 'HTTP/1.1';
       return protocol;
     }
 

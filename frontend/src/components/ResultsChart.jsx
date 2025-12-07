@@ -57,7 +57,7 @@ function ResultsChart({ data, scenarioFilter = 'all' }) {
 
   // Bar chart data - technical black/gray colors
   const barChartData = {
-    labels: protocols.map(p => p.toUpperCase()),
+    labels: protocols,
     datasets: [
       {
         label: `${t('ttfb')} (ms)`,
@@ -95,7 +95,7 @@ function ResultsChart({ data, scenarioFilter = 'all' }) {
       ];
 
       return {
-        label: protocol.toUpperCase(),
+        label: protocol,
         data: protocolData.map(d => d.fullLoad),
         borderColor: colors[index % colors.length].border,
         backgroundColor: colors[index % colors.length].bg,
@@ -266,7 +266,7 @@ function ResultsChart({ data, scenarioFilter = 'all' }) {
               {stats.map((stat) => (
                 <tr key={stat.protocol} className="border-b border-neutral-200 hover:bg-neutral-50">
                   <td className="px-4 py-3 font-bold text-black">
-                    {stat.protocol.toUpperCase()}
+                    {stat.protocol}
                   </td>
                   <td className="px-4 py-3 text-neutral-700">{stat.count}</td>
                   <td className="px-4 py-3 text-neutral-700">
