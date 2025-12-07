@@ -12,9 +12,9 @@ function ProtocolDetector() {
   }, []);
 
   const getProtocolLabel = (p) => {
-    if (p === 'h3') return t('http3');
-    if (p === 'h2') return t('http2');
-    if (p === 'http/1.1') return t('http1');
+    if (p === 'HTTP/3') return t('http3');
+    if (p === 'HTTP/2') return t('http2');
+    if (p === 'HTTP/1.1') return t('http1');
     return t('unknown').toUpperCase();
   };
 
