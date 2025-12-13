@@ -103,7 +103,7 @@ Cloudflare Workers automatically supports HTTP/2 and HTTP/3.
 
 3. **HTTP/1.1 (Localhost - Development Only)**
    - Run: `npm run dev` → `http://localhost:5173`
-   - ⚠️ **Warning**: Results are NOT comparable to production (no network latency)
+   - ⚠️ **Note**: Results are NOT comparable to production (no network latency)
    - Use only for feature testing, not performance comparison
 
 ### Using the Application
@@ -223,7 +223,7 @@ Cloudflare Workers automaticky podporuje HTTP/2 a HTTP/3.
 
 3. **HTTP/1.1 (Localhost - Pouze Pro Vývoj)**
    - Spusťte: `npm run dev` → `http://localhost:5173`
-   - ⚠️ **Varování**: Výsledky NEJSOU srovnatelné s produkcí (žádná síťová latence)
+   - ⚠️ **Upozornění**: Výsledky NEJSOU srovnatelné s produkcí (žádná síťová latence)
    - Používejte pouze pro testování funkcí, ne pro porovnání výkonu
 
 ### Použití Aplikace

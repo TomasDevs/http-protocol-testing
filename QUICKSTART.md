@@ -56,7 +56,7 @@ node testing/scripts/analyze-results.js   # Analyze results
    - Chrome: `chrome://flags` → search "QUIC" → Disable → Restart
 
 3. **HTTP/1.1** - Run locally: `npm run dev` → http://localhost:5173
-   - ⚠️ **Warning**: Not comparable to production (no latency)
+   - ⚠️ **Note**: Not comparable to production (no latency)
 
 **Browsers:**
 - Recommended: Chrome or Firefox (latest)
@@ -116,7 +116,7 @@ node testing/scripts/analyze-results.js   # Analýza výsledků
    - Chrome: `chrome://flags` → hledejte "QUIC" → Zakázat → Restartovat
 
 3. **HTTP/1.1** - Spusťte lokálně: `npm run dev` → http://localhost:5173
-   - ⚠️ **Varování**: Není srovnatelné s produkcí (žádná latence)
+   - ⚠️ **Upozornění**: Není srovnatelné s produkcí (žádná latence)
 
 **Prohlížeče:**
 - Doporučeno: Chrome nebo Firefox (nejnovější)

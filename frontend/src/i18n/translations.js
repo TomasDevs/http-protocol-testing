@@ -56,7 +56,7 @@ export const translations = {
     http2Step3: 'Refresh this page (F5)',
     http1Instructions: 'Run: npm run dev → http://localhost:5173',
     http1Warning: 'Localhost results are NOT comparable to production (no network latency)',
-    warning: 'Warning',
+    warning: 'Note',
 
     // Instructions
     howToTest: 'How to Test',
@@ -106,7 +106,7 @@ export const translations = {
     protocolDescHttp2: 'Modern protocol with multiplexing and header compression over TCP.',
     protocolDescHttp3: 'Latest protocol using QUIC over UDP. Fastest with multiplexing and 0-RTT.',
     protocolDescUnknown: 'Protocol could not be detected.',
-    localhostWarning: 'Localhost Warning',
+    localhostWarning: 'Localhost Note',
     localhostWarningText: 'Results are not comparable to production (no network latency). Use only for feature testing.',
 
     // Test Scenario
@@ -213,7 +213,7 @@ export const translations = {
     http2Step3: 'Obnovit stránku (F5)',
     http1Instructions: 'Spusťte: npm run dev → http://localhost:5173',
     http1Warning: 'Výsledky z localhostu NEJSOU srovnatelné s produkcí (žádná síťová latence)',
-    warning: 'Varování',
+    warning: 'Upozornění',
 
     // Instructions
     howToTest: 'Jak testovat',
@@ -263,7 +263,7 @@ export const translations = {
     protocolDescHttp2: 'Moderní protokol s multiplexingem a kompresí hlaviček přes TCP.',
     protocolDescHttp3: 'Nejnovější protokol používající QUIC přes UDP. Nejrychlejší s multiplexingem a 0-RTT.',
     protocolDescUnknown: 'Protokol nelze detekovat.',
-    localhostWarning: 'Varování Localhost',
+    localhostWarning: 'Upozornění Localhost',
     localhostWarningText: 'Výsledky nejsou srovnatelné s produkcí (žádná síťová latence). Používejte pouze pro testování funkcí.',
 
     // Test Scenario
